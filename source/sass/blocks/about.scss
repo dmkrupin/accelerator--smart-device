@@ -1,0 +1,58 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 118px;
+
+  .container {
+    position: relative;
+
+    &::before {
+      content: "2022";
+      position: absolute;
+      top: 53px;
+      left: -14px;
+      transform: rotate(-90deg);
+
+      color: $color-deep-sky-blue;
+      background-image: url("../img/content/background-desktop.png");
+      background-position: 20% -99%;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      font: 700 156.25px/140.6% $ff-roboto-condensed;
+    }
+  }
+}
+
+.about__title {
+  margin: 0 0 15px 251px;
+  padding: 0;
+
+  font: 400 36px/140.6% $ff-roboto-condensed;
+  color: $color-black-pearl;
+}
+
+.about__description,
+.about__more {
+  margin: 0 0 0 251px;
+  padding: 0;
+
+  font: 400 16px/134.4% $ff-pt-mono;
+  color: $color-black-pearl;
+}
+
+.about__description {
+  margin-bottom: 43px;
+}
+
+.about__more {
+  display: none;
+}
+
+.about__button {
+  margin-left: 251px;
+  padding: 14px 50px;
+  letter-spacing: 0.05em;
+}

@@ -1,0 +1,54 @@
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+
+  background-color: $color-black-pearl;
+  box-shadow: 0 0 15px 15px $color-black-pearl;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+
+.page-header__email {
+  display: flex;
+  margin-top: 11px;
+  position: relative;
+  left: 18px;
+
+  color: $color-default-white;
+  font: 400 16px/120% $ff-pt-mono;
+
+  svg {
+    margin-right: 14px;
+  }
+}
+
+.page-header__tel {
+  display: flex;
+  margin-top: 11px;
+  position: relative;
+  left: -12px;
+
+  color: $color-default-white;
+  font: 400 16px/120% $ff-pt-mono;
+
+  svg {
+    margin-right: 14px;
+  }
+}
+
+.page-header__callback {
+  margin-right: 60px;
+  padding: 9px 16px 13px;
+  position: relative;
+  top: 2px;
+  letter-spacing: 0.05em;
+}

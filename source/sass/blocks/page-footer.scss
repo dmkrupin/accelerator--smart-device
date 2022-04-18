@@ -1,0 +1,39 @@
+.page-footer {
+  background-color: $color-black-pearl;
+
+  .container {
+    padding-top: 55px;
+    padding-bottom: 44px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__company-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.page-footer__socials {
+  margin-left: 16px;
+}
+
+.page-footer__logo {
+  margin-top: -5px;
+  margin-bottom: 34px;
+
+  .logo__company-name {
+    margin: 3px 0 0;
+  }
+}
+
+.page-footer__site-sections {
+  position: relative;
+  left: -58px;
+}
+
+.page-footer__contacts {
+  position: relative;
+  left: -39px;
+}

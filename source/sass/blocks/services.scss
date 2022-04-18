@@ -1,0 +1,81 @@
+.services {
+  padding: 70px 0 140px;
+
+  background-color: $color-black-pearl;
+}
+
+.services__title {
+  margin: -3px 0 54px;
+  padding: 0;
+
+  font: 400 36px/140.6% $ff-roboto-condensed;
+  color: $color-default-white;
+}
+
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 85px;
+}
+
+.services__item {
+  $color-black-pearl-50: transparentize($color-black-pearl, 0.5);
+
+  position: relative;
+  display: block;
+  min-height: 650px;
+  padding: 47px 40px;
+  color: $color-default-white;
+  background-image:
+    linear-gradient($color-black-pearl-50, $color-black-pearl-50),
+    url("../img/content/services-background.jpg");
+  // background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 1494px 818px;
+  background-position: 0 0;
+
+  outline: none;
+
+  transition: background-image $trans-default;
+
+  font: 400 20px/30px $ff-roboto-condensed;
+
+  &:nth-of-type(1) {
+    background-position: 0 0, -188px -116px;
+  }
+  &:nth-of-type(2) {
+    background-position: 0 0, -536px -121px;
+  }
+  &:nth-of-type(3) {
+    background-position: 0 0, -894px -110px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border-top-left-radius: 3px;
+    background-color: $color-deep-sky-blue;
+    background-image: url("../img/svg/icon-arrowright.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      background-image:
+      linear-gradient(180deg, $color-black-pearl 20%, $color-black-pearl-50),
+      url("../img/content/services-background.jpg");
+
+      &::after {
+        background-color: $color-alice-blue;
+        background-image: url("../img/svg/icon-arrowright-dark.svg");
+      }
+    }
+  }
+}
