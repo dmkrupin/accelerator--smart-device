@@ -26,6 +26,10 @@ $color-black-pearl-15: transparentize($color-black-pearl, 0.85);
   font: 400 16px/134.4% $ff-pt-mono;
   color: $color-default-white;
 
+  @include vp-1023 {
+    padding: 32px 15px 19px;
+  }
+
   &:focus {
     outline: 2px solid $color-black-pearl;
   }

@@ -6,6 +6,13 @@
     padding-bottom: 44px;
     display: flex;
     justify-content: space-between;
+
+    @include vp-1023 {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-between;
+      padding-bottom: 58px;
+    }
   }
 }
 
@@ -13,27 +20,52 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
 
-.page-footer__socials {
-  margin-left: 16px;
+  @include vp-1023 {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    margin-bottom: 36px;
+  }
 }
 
 .page-footer__logo {
   margin-top: -5px;
   margin-bottom: 34px;
 
+  @include vp-1023 {
+    margin-right: auto;
+    margin-top: -4px;
+    margin-bottom: 0;
+  }
+
   .logo__company-name {
     margin: 3px 0 0;
+  }
+}
+
+.page-footer__socials {
+  margin-left: 16px;
+
+  @include vp-1023 {
+    margin-top: 5px;
   }
 }
 
 .page-footer__site-sections {
   position: relative;
   left: -58px;
+
+  @include vp-1023 {
+    position: static;
+  }
 }
 
 .page-footer__contacts {
   position: relative;
   left: -39px;
+
+  @include vp-1023 {
+    position: static;
+    margin-right: 13px;
+  }
 }

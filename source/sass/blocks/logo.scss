@@ -18,6 +18,10 @@
 
   color: $color-default-white;
   font: 700 25px/120% $ff-roboto-condensed;
+
+  @include vp-1023 {
+    margin: 5px 0 0;
+  }
 }
 
 .logo__slogan {

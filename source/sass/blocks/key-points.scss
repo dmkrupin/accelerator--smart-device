@@ -1,6 +1,10 @@
 .key-points {
   margin-bottom: 120px;
   background-color: $color-default-white;
+
+  @include vp-1023 {
+    margin-bottom: 77px;
+  }
 }
 
 .key-points__list {
@@ -12,6 +16,10 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 31px;
   row-gap: 30px;
+
+  @include vp-1023 {
+    column-gap: 29px;
+  }
 }
 
 .key-points__item {
@@ -36,6 +44,10 @@
     background-color: $color-deep-sky-blue;
     outline: none;
 
+    @include vp-1023 {
+      padding: 39px 45px 25px;
+    }
+
     .key-points__title,
     .key-points__description {
       color: $color-alice-blue;
@@ -45,12 +57,41 @@
       fill: $color-alice-blue;
     }
   }
+
+  @include vp-1023 {
+    padding: 38px 40px 25px;
+    min-height: 360px;
+
+    &--privacy {
+      padding: 39px 40px 25px;
+
+      svg {
+        margin-bottom: 16px;
+      }
+    }
+
+    &--price {
+      padding: 39px 42px 25px;
+
+      svg {
+        margin-bottom: 12px;
+      }
+
+      .key-points__title {
+        margin: 0 0 7px;
+      }
+    }
+  }
 }
 
 .key-points__title {
   margin: 0 0 17px;
   font: 400 24px/140% $ff-roboto-condensed;
   color: $color-deep-sky-blue;
+
+  @include vp-1023 {
+    margin: 0 0 9px;
+  }
 }
 
 .key-points__description {

@@ -9,11 +9,25 @@
   background-color: $color-black-pearl;
   box-shadow: 0 0 15px 15px $color-black-pearl;
 
+  @include vp-1023 {
+    min-height: 85px;
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: nowrap;
+
+    @include vp-1023 {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.page-header__logo {
+  @include vp-1023 {
+    margin-top: 10px;
   }
 }
 
@@ -29,6 +43,15 @@
   svg {
     margin-right: 14px;
   }
+
+  @include vp-1023 {
+    margin-top: 20px;
+    margin-left: auto;
+
+    span {
+      display: none;
+    }
+  }
 }
 
 .page-header__tel {
@@ -43,6 +66,14 @@
   svg {
     margin-right: 14px;
   }
+
+  @include vp-1023 {
+    margin: 20px 4px 0 56px;
+
+    span {
+      display: none;
+    }
+  }
 }
 
 .page-header__callback {
@@ -51,4 +82,8 @@
   position: relative;
   top: 2px;
   letter-spacing: 0.05em;
+
+  @include vp-1023 {
+      display: none;
+  }
 }

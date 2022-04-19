@@ -24,6 +24,11 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  @include vp-1023 {
+    max-height: none;
+    flex-wrap: nowrap;
+  }
 }
 
 .site-sections__item {

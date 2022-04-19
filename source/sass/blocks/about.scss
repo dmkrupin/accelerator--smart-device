@@ -4,6 +4,10 @@
   align-items: flex-start;
   margin-bottom: 118px;
 
+  @include vp-1023 {
+    margin-bottom: 79px;
+  }
+
   .container {
     position: relative;
 
@@ -22,6 +26,15 @@
       background-clip: text;
 
       font: 700 156.25px/140.6% $ff-roboto-condensed;
+
+      @include retina {
+        background-image: url("../img/content/background-desktop@2x.png");
+      }
+
+      @include vp-1023 {
+        top: 56px;
+        left: -20px;
+      }
     }
   }
 }
@@ -32,6 +45,11 @@
 
   font: 400 36px/140.6% $ff-roboto-condensed;
   color: $color-black-pearl;
+
+  @include vp-1023 {
+    margin: 0 0 12px 175px;
+    font: 400 36px/144% $ff-roboto-condensed;
+  }
 }
 
 .about__description,
@@ -45,6 +63,15 @@
 
 .about__description {
   margin-bottom: 43px;
+
+  &:first-of-type {
+    margin-bottom: 24px;
+  }
+
+  @include vp-1023 {
+    margin-left: 175px;
+    margin-bottom: 20px;
+  }
 }
 
 .about__more {
@@ -55,4 +82,8 @@
   margin-left: 251px;
   padding: 14px 50px;
   letter-spacing: 0.05em;
+
+  @include vp-1023 {
+    margin-left: 175px;
+  }
 }
