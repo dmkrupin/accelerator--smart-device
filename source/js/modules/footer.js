@@ -13,8 +13,7 @@ function onSiteSectionsTitleClick() {
     siteSectionsElement.classList.add('is-opened');
     contactsListElement.style.display = '';
     contactsElement.classList.remove('is-opened');
-  }
-  else {
+  } else {
     siteSectionsListElement.style.display = '';
     siteSectionsElement.classList.remove('is-opened');
   }
@@ -26,8 +25,7 @@ function onContactsTitleClick() {
     contactsElement.classList.add('is-opened');
     siteSectionsListElement.style.display = '';
     siteSectionsElement.classList.remove('is-opened');
-  }
-  else {
+  } else {
     contactsListElement.style.display = '';
     contactsElement.classList.remove('is-opened');
   }

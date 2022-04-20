@@ -83,7 +83,7 @@
     font-size: 18px;
   }
 
-  &:nth-of-type(1) {
+  &:nth-of-type(1n) {
     background-position: 0 0, -188px -116px;
 
     @include vp-1023 {
@@ -95,7 +95,7 @@
     }
   }
 
-  &:nth-of-type(2) {
+  &:nth-of-type(2n) {
     background-position: 0 0, -536px -121px;
 
     br:nth-of-type(1) {
@@ -119,7 +119,7 @@
     }
   }
 
-  &:nth-of-type(3) {
+  &:nth-of-type(3n) {
     background-position: 0 0, -894px -110px;
 
     @include vp-1023 {
@@ -148,7 +148,6 @@
       width: 40px;
       height: 40px;
     }
-
   }
 
   @media (hover: hover), screen and (min-width: 0\0) {
@@ -160,14 +159,14 @@
 
       @include vp-1023 {
         background-image:
-        linear-gradient(180deg, $color-black-pearl 50px, $color-black-pearl-50),
-        url("../img/content/services-background.jpg");
+          linear-gradient(180deg, $color-black-pearl 50px, $color-black-pearl-50),
+          url("../img/content/services-background.jpg");
       }
 
       @include vp-767 {
         background-image:
-        linear-gradient(180deg, $color-black-pearl, $color-black-pearl-50),
-        url("../img/content/services-background.jpg");
+          linear-gradient(180deg, $color-black-pearl, $color-black-pearl-50),
+          url("../img/content/services-background.jpg");
       }
 
       &::after {

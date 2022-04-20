@@ -7,6 +7,17 @@
     <meta name="description" content="Описание проекта">
     <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- preload -->
+    <link rel="preload" href="fonts/PTMono-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/PTMono-Regular.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Medium.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" type="font/woff" as="font" crossorigin="anonymous">
+
   </head>
   <body>
     <div class="wrapper">
@@ -141,7 +152,7 @@
                 <input class="form__text" type="tel" name="tel" placeholder="Телефон" required>
                 <textarea class="form__textarea" name="question" rows="5">Ваш вопрос</textarea>
                 <button class="form__submit button button--dark" type="submit">ЗАДАТЬ ВОПРОС</button>
-                <label class="form__checkbox-label" for="personal-data-permission" name="personal-data-permission">
+                <label class="form__checkbox-label" for="personal-data-permission">
                   <input class="form__checkbox" type="checkbox" name="personal-data-permission" id="personal-data-permission" checked required>
                   <span class="form__checkbox-box"></span>
                   <span class="form__checkbox-label-text">Я согласен на обработку  персональных данных</span>
@@ -153,7 +164,7 @@
       </main>
       <footer class="page-footer">
         <div class="container">
-          <section class="page-footer__company-links">
+          <div class="page-footer__company-links">
             <a class="page-footer__logo logo">
               <svg class="logo__image" width="55" height="55" aria-label="Логотип компании">
                 <use xlink:href="img/sprite_auto.svg#logo"></use>
@@ -184,7 +195,7 @@
                 </a>
               </li>
             </ul>
-          </section>
+          </div>
           <section class="page-footer__site-sections page-footer__site-sections--nojs site-sections">
             <h4 class="site-sections__title">Разделы сайта</h4>
             <ul class="site-sections__list">
@@ -236,7 +247,7 @@
             <input class="form__text" type="tel" name="popup-tel" placeholder="Телефон" required>
             <textarea class="form__textarea" name="popup-question" rows="5">Ваш вопрос</textarea>
             <button class="form__submit button button--dark" type="submit">отправить</button>
-            <label class="form__checkbox-label" for="popup-personal-data-permission" name="popup-personal-data-permission">
+            <label class="form__checkbox-label" for="popup-personal-data-permission">
               <input class="form__checkbox" type="checkbox" name="popup-personal-data-permission" id="popup-personal-data-permission" checked required>
               <span class="form__checkbox-box"></span>
               <span class="form__checkbox-label-text">Я согласен на обработку  персональных данных</span>

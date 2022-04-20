@@ -196,7 +196,6 @@
       width: 15px;
       height: 1px;
       background-color: $color-alice-blue;
-
     }
 
     &::after {
@@ -225,7 +224,6 @@
         }
       }
     }
-
   }
 
   &--nojs {
@@ -237,6 +235,7 @@
       &::after {
         display: none;
       }
+
       .contacts__title {
         cursor: default;
       }

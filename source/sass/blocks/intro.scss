@@ -20,7 +20,7 @@
     background-image:
       linear-gradient(180deg, transparentize($color-black-pearl-grey, 0.3) 71.72%, transparentize($color-black-pearl-grey, 1) 100%),
       url("../img/content/intro-tablet.jpg");
-      background-position: 0 0, 0 -85px;
+    background-position: 0 0, 0 -85px;
 
     @include retina {
       background-image:
@@ -36,7 +36,7 @@
     background-image:
       linear-gradient(180deg, transparentize($color-black-pearl-grey, 0.3) 71.72%, transparentize($color-black-pearl-grey, 1) 100%),
       url("../img/content/intro-mobile.jpg");
-      background-position: 0 0, 0 -60px;
+    background-position: 0 0, 0 -60px;
 
     @include retina {
       background-image:
