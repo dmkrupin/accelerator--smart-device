@@ -1,0 +1,51 @@
+.popup {
+  width: 500px;
+  min-height: 610px;
+  padding: 37px 40px 40px;
+
+  position: relative;
+  top: -181px;
+  left: -8px;
+
+  background-color: $color-deep-sky-blue;
+  border-radius: 3px;
+}
+
+.popup__title {
+  margin: 0 0 5px;
+  padding: 0;
+  font: 400 30px/140.6% $ff-roboto-condensed;
+  color: $color-default-white;
+}
+
+.popup__description {
+  margin: 0 0 38px;
+  padding: 0;
+  color: $color-default-white;
+  font: 400 16px/134.4% $ff-pt-mono;
+}
+
+.popup__form {
+  .form__text {
+    margin-bottom: 20px;
+  }
+  .form__textarea {
+    margin-bottom: 24px;
+  }
+
+  .form__submit {
+    justify-content: center;
+    padding: 15px 10px 11px;
+    margin-bottom: 20px;
+  }
+
+  .form__checkbox-label {
+    align-self: center;
+    position: relative;
+    left: -8px;
+  }
+
+  .form__checkbox-label-text {
+    margin-left: 25px;
+  }
+}

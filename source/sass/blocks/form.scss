@@ -1,5 +1,10 @@
 $color-black-pearl-15: transparentize($color-black-pearl, 0.85);
 
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__text {
   padding: 15px 15px 14px;
   border: none;

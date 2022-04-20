@@ -1410,6 +1410,15 @@ button,
       font-size: 14px;
       margin-bottom: 36px; } }
 
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
 .form__text {
   padding: 15px 15px 14px;
   border: none;
@@ -1845,6 +1854,51 @@ button,
     .contacts__tel:hover, .contacts__tel:focus {
       color: #ffffff;
       text-decoration: underline; } }
+
+.popup {
+  width: 500px;
+  min-height: 610px;
+  padding: 37px 40px 40px;
+  position: relative;
+  top: -181px;
+  left: -8px;
+  background-color: #00B2FF;
+  border-radius: 3px; }
+
+.popup__title {
+  margin: 0 0 5px;
+  padding: 0;
+  font: 400 30px/140.6% "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff; }
+
+.popup__description {
+  margin: 0 0 38px;
+  padding: 0;
+  color: #ffffff;
+  font: 400 16px/134.4% "PT Mono", "Times New Roman", serif; }
+
+.popup__form .form__text {
+  margin-bottom: 20px; }
+
+.popup__form .form__textarea {
+  margin-bottom: 24px; }
+
+.popup__form .form__submit {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 10px 11px;
+  margin-bottom: 20px; }
+
+.popup__form .form__checkbox-label {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+  left: -8px; }
+
+.popup__form .form__checkbox-label-text {
+  margin-left: 25px; }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
