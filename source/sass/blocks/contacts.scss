@@ -12,18 +12,40 @@
   color: $color-default-white;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  @include vp-767 {
+    margin-bottom: 17px;
+  }
 }
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 
 .contacts__address {
   margin-bottom: 5px;
   color: transparentize($color-default-white, 0.3);
   font-style: normal;
+
+  @include vp-767 {
+    font: 400 14px/135% $ff-pt-mono;
+    margin-bottom: 22px;
+  }
 }
+
 .contacts__tel {
   margin-bottom: 6px;
   color: transparentize($color-default-white, 0.3);
   font-style: normal;
   outline: none;
+
+  @include vp-767 {
+    font: 400 14px/135% $ff-pt-mono;
+    margin-bottom: 12px;
+  }
 
   @media (hover: hover), screen and (min-width: 0\0) {
     &:hover,

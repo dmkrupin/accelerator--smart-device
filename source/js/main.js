@@ -1,5 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {breakpoint, breakpointChecker} from './modules/adaptive';
+import {initFooter} from './modules/footer';
 
 // ---------------------------------
 
@@ -9,6 +11,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  breakpoint.addListener(breakpointChecker);
+  breakpointChecker();
 
   // Modules
   // ---------------------------------
@@ -17,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    initFooter();
   });
 });
 
