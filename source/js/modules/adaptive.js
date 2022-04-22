@@ -1,9 +1,9 @@
 const breakpoint = window.matchMedia('(max-width:767px)');
 const introButtonElement = document.querySelector('.intro__button');
-const aboutDescriptionFloatingElement = document.querySelector('.about__description--floating');
+const aboutDescriptionFloatingElement = document.querySelector('p[data-about-text="adaptive"]');
 const servicesTitleElement = document.querySelector('.services__title');
 const callbackElement = document.querySelector('.callback');
-const textareaElement = callbackElement.querySelector('.form__textarea');
+const textareaElement = callbackElement.querySelector('label textarea');
 
 const breakpointChecker = () => {
   if (breakpoint.matches) {

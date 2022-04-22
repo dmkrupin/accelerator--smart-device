@@ -9,6 +9,13 @@
 
   background-color: $color-deep-sky-blue;
   border-radius: 3px;
+
+  p:first-of-type {
+    margin: 0 0 38px;
+    padding: 0;
+    color: $color-default-white;
+    font: 400 16px/134.4% $ff-pt-mono;
+  }
 }
 
 .popup__title {
@@ -18,35 +25,29 @@
   color: $color-default-white;
 }
 
-.popup__description {
-  margin: 0 0 38px;
-  padding: 0;
-  color: $color-default-white;
-  font: 400 16px/134.4% $ff-pt-mono;
-}
-
 .popup__form {
-  .form__text {
+  input[type="text"],
+  input[type="tel"] {
     margin-bottom: 20px;
   }
 
-  .form__textarea {
+  textarea {
     margin-bottom: 24px;
   }
 
-  .form__submit {
+  button[type="submit"] {
     justify-content: center;
     padding: 15px 10px 11px;
     margin-bottom: 20px;
   }
 
-  .form__checkbox-label {
+  label[data-checkbox] {
     align-self: center;
     position: relative;
     left: -8px;
-  }
 
-  .form__checkbox-label-text {
-    margin-left: 25px;
+    span:not(:first-of-type) {
+      margin-left: 25px;
+    }
   }
 }

@@ -18,6 +18,12 @@
     <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" type="font/woff" as="font" crossorigin="anonymous">
 
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
   </head>
   <body>
     <div class="wrapper">
@@ -27,8 +33,8 @@
             <svg class="logo__image" width="55" height="55" aria-label="Логотип компании">
               <use xlink:href="img/sprite_auto.svg#logo"></use>
             </svg>
-            <p class="logo__company-name">Smart Device</p>
-            <p class="logo__slogan">умные технологии</p>
+            <p>Smart Device</p>
+            <p>умные технологии</p>
           </a>
           <a class="page-header__email" href="mailto:info@sd.ru">
             <svg width="20" height="20" aria-label="Наш e-mail">
@@ -53,7 +59,7 @@
             <h1 class="intro__title">
               Печатные платы
             </h1>
-            <p class="intro__description">
+            <p>
               производство и монтаж, поставка комплектующих,<br> блоков и модулей
             </p>
             <a class="intro__button button button--blue" href="#callback">Получить бесплатную консультацию</a>
@@ -67,7 +73,7 @@
                   <use xlink:href="img/sprite_auto.svg#icon-stopwatch"></use>
                 </svg>
                 <h3 class="key-points__title">Оперативные сроки</h3>
-                <p class="key-points__description">
+                <p>
                   Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки
                 </p>
               </li>
@@ -76,7 +82,7 @@
                   <use xlink:href="img/sprite_auto.svg#icon-people"></use>
                 </svg>
                 <h3 class="key-points__title">Крупные поставщики</h3>
-                <p class="key-points__description">
+                <p>
                   Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
                 </p>
               </li>
@@ -85,7 +91,7 @@
                   <use xlink:href="img/sprite_auto.svg#icon-spy"></use>
                 </svg>
                 <h3 class="key-points__title">Полная конфиденциальность</h3>
-                <p class="key-points__description">
+                <p>
                   По желанию клиента  мы обеспечиваем полную конфеденциальность.
                 </p>
               </li>
@@ -94,7 +100,7 @@
                   <use xlink:href="img/sprite_auto.svg#icon-tag"></use>
                 </svg>
                 <h3 class="key-points__title">Персонализация стоимости</h3>
-                <p class="key-points__description">
+                <p>
                   Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
                 </p>
               </li>
@@ -106,13 +112,13 @@
             <h2 class="about__title">
               О компании
             </h2>
-            <p class="about__description">
+            <p>
               Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
             </p>
-            <p class="about__description about__description--floating">
+            <p data-about-text="adaptive">
               Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
             </p>
-            <p class="about__description about__description--accordeon">
+            <p data-about-text="accordeon">
               Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.
               <br><br>
               Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов
@@ -144,18 +150,24 @@
               <h2 class="callback__title">
                 Остались вопросы? Задайте их нам!
               </h2>
-              <p class="callback__description">
+              <p>
                 Мы проконсультируем Вас бесплатно
               </p>
-              <form class="callback__form form" action="https://echo.htmlacademy.ru" method="post">
-                <input class="form__text" type="text" name="name" placeholder="Имя" required>
-                <input class="form__text" type="tel" name="tel" placeholder="Телефон" required>
-                <textarea class="form__textarea" name="question" rows="5">Ваш вопрос</textarea>
-                <button class="form__submit button button--dark" type="submit">ЗАДАТЬ ВОПРОС</button>
-                <label class="form__checkbox-label" for="personal-data-permission">
-                  <input class="form__checkbox" type="checkbox" name="personal-data-permission" id="personal-data-permission" checked required>
-                  <span class="form__checkbox-box"></span>
-                  <span class="form__checkbox-label-text">Я согласен на обработку  персональных данных</span>
+              <form class="callback__form" action="https://echo.htmlacademy.ru" method="post">
+                <label>
+                  <input type="text" name="name" placeholder="Имя" required>
+                </label>
+                <label>
+                  <input type="tel" name="tel" placeholder="Телефон" required>
+                </label>
+                <label data-textarea>
+                  <textarea name="question" rows="5">Ваш вопрос</textarea>
+                </label>
+                <button class="button button--dark" type="submit">ЗАДАТЬ ВОПРОС</button>
+                <label for="personal-data-permission" data-checkbox>
+                  <input type="checkbox" name="personal-data-permission" id="personal-data-permission" checked required>
+                  <span></span>
+                  <span>Я согласен на обработку  персональных данных</span>
                 </label>
               </form>
             </div>
@@ -169,8 +181,8 @@
               <svg class="logo__image" width="55" height="55" aria-label="Логотип компании">
                 <use xlink:href="img/sprite_auto.svg#logo"></use>
               </svg>
-              <p class="logo__company-name">Smart Device</p>
-              <p class="logo__slogan">умные технологии</p>
+              <p>Smart Device</p>
+              <p>умные технологии</p>
             </a>
             <ul class="page-footer__socials socials">
               <li class="socials__item">
@@ -241,13 +253,19 @@
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content popup">
           <h2 class="popup__title">Закажите звонок</h2>
-          <p class="popup__description">Оставьте контакты, мы проконсультируем<br> вас бесплатно в удобное время</p>
-          <form class="popup__form form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="form__text" type="text" name="popup-name" placeholder="Имя" required>
-            <input class="form__text" type="tel" name="popup-tel" placeholder="Телефон" required>
-            <textarea class="form__textarea" name="popup-question" rows="5">Ваш вопрос</textarea>
-            <button class="form__submit button button--dark" type="submit">отправить</button>
-            <label class="form__checkbox-label" for="popup-personal-data-permission">
+          <p>Оставьте контакты, мы проконсультируем<br> вас бесплатно в удобное время</p>
+          <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
+            <label>
+              <input type="text" name="popup-name" placeholder="Имя" required>
+            </label>
+            <label>
+              <input type="tel" name="popup-tel" placeholder="Телефон" required>
+            </label>
+            <label data-textarea>
+              <textarea name="popup-question" rows="5">Ваш вопрос</textarea>
+            </label>
+            <button class="button button--dark" type="submit">отправить</button>
+            <label for="popup-personal-data-permission" data-checkbox>
               <input class="form__checkbox" type="checkbox" name="popup-personal-data-permission" id="popup-personal-data-permission" checked required>
               <span class="form__checkbox-box"></span>
               <span class="form__checkbox-label-text">Я согласен на обработку  персональных данных</span>

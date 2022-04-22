@@ -31,7 +31,7 @@
   .container::before {
     content: "";
     position: absolute;
-    top: 46%;
+    top: 45%;
     left: 18%;
     z-index: 10;
     width: 510px;
@@ -46,35 +46,53 @@
     }
   }
 
-  .form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
-    row-gap: 20px;
+  p:first-of-type {
+    margin: -3px 0 35px;
+    padding: 0;
+
+    font: 400 16px/134.4% $ff-pt-mono;
+    color: $color-default-white;
+
+    @include vp-1023 {
+      margin: -3px 0 24px;
+    }
 
     @include vp-767 {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
+      font-size: 14px;
+      margin-bottom: 36px;
     }
   }
+}
 
-  .form__text {
+.callback__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 20px;
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  input[type="text"],
+  input[type="tel"] {
     @include vp-767 {
       margin-bottom: 20px;
     }
   }
 
-  .form__textarea {
+  label[data-textarea] {
     grid-column: 1 / -1;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 
     @include vp-767 {
-      margin-bottom: 30px;
+      margin-bottom: 23px;
     }
   }
 
-  .form__submit {
+  button[type="submit"] {
     width: fit-content;
     padding: 15px 70px 11px;
 
@@ -84,7 +102,7 @@
     }
   }
 
-  .form__checkbox-label {
+  label[data-checkbox] {
     margin-left: 10px;
     margin-top: 14px;
 
@@ -127,22 +145,5 @@
 
   @include vp-767 {
     font-size: 30px;
-  }
-}
-
-.callback__description {
-  margin: -3px 0 35px;
-  padding: 0;
-
-  font: 400 16px/134.4% $ff-pt-mono;
-  color: $color-default-white;
-
-  @include vp-1023 {
-    margin: -3px 0 24px;
-  }
-
-  @include vp-1023 {
-    font-size: 14px;
-    margin-bottom: 36px;
   }
 }
