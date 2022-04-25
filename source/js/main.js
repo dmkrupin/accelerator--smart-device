@@ -1,7 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {breakpoint, breakpointChecker} from './modules/adaptive';
-import {initFormValidation} from './modules/form-validation';
+import {masking} from './vendor/masking-inputs';
+// import {initFormValidation} from './modules/form-validation';
+import {setSmoothScrolls} from './modules/smooth-scroll';
 import {initAboutButton} from './modules/about';
 import {initFooter} from './modules/footer';
 
@@ -15,7 +17,9 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   breakpoint.addListener(breakpointChecker);
   breakpointChecker();
-  initFormValidation();
+  masking.init();
+  setSmoothScrolls();
+  // initFormValidation();
 
   // Modules
   // ---------------------------------

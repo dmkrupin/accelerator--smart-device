@@ -308,6 +308,30 @@ template {
 [hidden] {
   display: none; }
 
+/* Libary CSS */
+.shell {
+  position: relative;
+  line-height: 1; }
+  .shell span {
+    position: absolute;
+    left: 3px;
+    top: 1px;
+    color: red;
+    pointer-events: none;
+    z-index: -1; }
+    .shell span i {
+      /* any of these 3 will work */
+      color: transparent;
+      opacity: 0;
+      visibility: hidden; }
+
+input.masked,
+.shell span {
+  font-size: 16px;
+  font-family: monospace;
+  padding-right: 10px;
+  background-color: transparent; }
+
 @font-face {
   font-style: normal;
   font-weight: 400;
@@ -588,8 +612,8 @@ button,
         padding: 20px; } }
   .modal__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 16px;
+    right: 15px;
     z-index: 1;
     width: 40px;
     height: 40px;
@@ -1875,7 +1899,7 @@ form {
   margin-bottom: 20px; }
 
 .popup__form textarea {
-  margin-bottom: 24px; }
+  margin-bottom: 18px; }
 
 .popup__form button[type="submit"] {
   -webkit-box-pack: center;

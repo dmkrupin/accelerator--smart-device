@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Описание проекта">
     <title>Smart Device</title>
+
+    <!-- styles -->
     <link rel="stylesheet" href="css/style.min.css">
 
     <!-- preload -->
@@ -23,7 +25,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-
   </head>
   <body>
     <div class="wrapper">
@@ -158,7 +159,7 @@
                   <input type="text" name="name" placeholder="Имя" required>
                 </label>
                 <label>
-                  <input type="tel" name="tel" placeholder="Телефон" required>
+                  <input class="masked" type="tel" name="tel" id="tel" placeholder="Телефон" data-placeholder="+7 (XXX) XXX-XXXX" pattern="\+7 \(\d{3}\) \d{3}-\d{4}" title="+7 (xxx) xxx-xx-xx" required autocomplete="off">
                 </label>
                 <label data-textarea>
                   <textarea name="question" rows="5">Ваш вопрос</textarea>
@@ -247,7 +248,7 @@
       </footer>
     </div>
 
-    <!-- Модалки -->
+    <!-- modals -->
     <div class="modal modal--preload" data-modal="callback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
@@ -259,7 +260,7 @@
               <input type="text" name="popup-name" placeholder="Имя" required>
             </label>
             <label>
-              <input type="tel" name="popup-tel" placeholder="Телефон" required>
+              <input class="masked" type="tel" name="popup-tel" id="popup-tel" placeholder="Телефон" data-placeholder="+7 (XXX) XXX-XXXX" pattern="\+7 \(\d{3}\) \d{3}-\d{4}" title="+7 (xxx) xxx-xx-xx" required autocomplete="off">
             </label>
             <label data-textarea>
               <textarea name="popup-question" rows="5">Ваш вопрос</textarea>
@@ -272,7 +273,7 @@
             </label>
           </form>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
+            <svg width="20" height="20">
               <use xlink:href="img/sprite_auto.svg#icon-close"></use>
             </svg>
           </button>

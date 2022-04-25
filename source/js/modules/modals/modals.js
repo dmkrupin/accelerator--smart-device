@@ -1,5 +1,6 @@
 import {ScrollLock} from '../../utils/scroll-lock';
 import {FocusLock} from '../../utils/focus-lock';
+import {focusFirstInput} from '../autofocus-first-input';
 
 export class Modals {
   constructor(settings = {}) {
@@ -168,6 +169,7 @@ export class Modals {
       this._addListeners(modal);
       this._autoPlay(modal);
       document.addEventListener('click', this._documentClickHandler);
+      focusFirstInput(modal);
     }, this._eventTimeout);
   }
 
