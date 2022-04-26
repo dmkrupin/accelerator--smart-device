@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
 }
 
 .site-sections__title {
@@ -16,6 +15,7 @@
 
   @include vp-767 {
     margin-bottom: 0;
+    padding: 22px 25px 21px;
   }
 }
 
@@ -25,25 +25,33 @@
   list-style: none;
 
   max-height: 160px;
+  width: 470px;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 5px;
+
+  overflow-x: scroll;
 
   @include vp-1023 {
     max-height: none;
+    width: auto;
     flex-wrap: nowrap;
+    column-gap: 0;
+    overflow-x: initial;
   }
 
   @include vp-767 {
-    margin-top: 22px;
-    // display: none;
+    padding: 0 22px 25px;
   }
 }
 
 .site-sections__item {
   width: 220px;
-  margin-right: 30px;
-  margin-bottom: 5px;
+  // margin-right: 30px;
+  // margin-bottom: 5px;
 }
 
 .site-sections__link {

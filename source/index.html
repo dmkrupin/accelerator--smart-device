@@ -30,12 +30,11 @@
     <div class="wrapper">
       <header class="page-header">
         <div class="container">
-          <a class="page-header__logo logo">
-            <svg class="logo__image" width="55" height="55" aria-label="Логотип компании">
-              <use xlink:href="img/sprite_auto.svg#logo"></use>
-            </svg>
-            <p>Smart Device</p>
-            <p>умные технологии</p>
+          <a class="page-header__logo" href="#">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/svg/logo-short.svg" width="35" height="35">
+              <img src="img/svg/logo.svg" width="215" height="55" alt="Логотип компании">
+            </picture>
           </a>
           <a class="page-header__email" href="mailto:info@sd.ru">
             <svg width="20" height="20" aria-label="Наш e-mail">
@@ -49,7 +48,7 @@
             </svg>
             <span>+7 (495) 000 52 52</span>
           </a>
-          <a class="page-header__callback button button--transparent-dark" data-open-modal="callback">
+          <a class="page-header__callback button button--transparent-dark" href="#callback" data-open-modal="callback" tabindex="0">
             Заказать звонок
           </a>
         </div>
@@ -119,12 +118,12 @@
             <p data-about-text="adaptive">
               Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
             </p>
-            <p data-about-text="accordeon">
+            <p data-about-text="accordeon-nojs">
               Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.
               <br><br>
               Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов.
             </p>
-            <button class="about__button button button--transparent-blue">Подробнее</button>
+            <button class="about__button about__button--nojs button button--transparent-blue">Подробнее</button>
           </div>
         </section>
         <section class="services">
@@ -162,7 +161,7 @@
                   <input class="masked" type="tel" name="tel" id="tel" placeholder="Телефон" data-placeholder="+7 (XXX) XXX-XXXX" pattern="\+7 \(\d{3}\) \d{3}-\d{4}" title="+7 (xxx) xxx-xx-xx" required autocomplete="off">
                 </label>
                 <label data-textarea>
-                  <textarea name="question" rows="5">Ваш вопрос</textarea>
+                  <textarea name="question" rows="5" placeholder="Ваш вопрос"></textarea>
                 </label>
                 <button class="button button--dark" type="submit">ЗАДАТЬ ВОПРОС</button>
                 <label for="personal-data-permission" data-checkbox>
@@ -178,12 +177,8 @@
       <footer class="page-footer">
         <div class="container">
           <div class="page-footer__company-links">
-            <a class="page-footer__logo logo">
-              <svg class="logo__image" width="55" height="55" aria-label="Логотип компании">
-                <use xlink:href="img/sprite_auto.svg#logo"></use>
-              </svg>
-              <p>Smart Device</p>
-              <p>умные технологии</p>
+            <a class="page-footer__logo" href="#">
+              <img src="img/svg/logo.svg" width="215" height="55" alt="Логотип компании">
             </a>
             <ul class="page-footer__socials socials">
               <li class="socials__item">
@@ -211,29 +206,29 @@
           </div>
           <section class="page-footer__site-sections page-footer__site-sections--nojs site-sections">
             <h4 class="site-sections__title">Разделы сайта</h4>
-            <ul class="site-sections__list">
-              <li class="site-sections__item">
-                <a class="site-sections__link" href="sitemap.html">О&nbsp;Компании</a>
-              </li>
-              <li class="site-sections__item">
-                <a class="site-sections__link" href="sitemap.html">Продукты</a>
-              </li>
-              <li class="site-sections__item">
-                <a class="site-sections__link" href="sitemap.html">Производство печатных плат</a>
-              </li>
-              <li class="site-sections__item">
-                <a class="site-sections__link" href="sitemap.html">Монтаж печатных плат</a>
-              </li>
-              <li class="site-sections__item">
-                <a class="site-sections__link" href="sitemap.html">Комплектующие</a>
-              </li>
-              <li class="site-sections__item">
-                <a class="site-sections__link" href="sitemap.html">Доставка</a>
-              </li>
-              <li class="site-sections__item">
-                <a class="site-sections__link" href="sitemap.html">Контакты</a>
-              </li>
-            </ul>
+              <ul class="site-sections__list no-scrollbar">
+                <li class="site-sections__item">
+                  <a class="site-sections__link" href="sitemap.html">О&nbsp;Компании</a>
+                </li>
+                <li class="site-sections__item">
+                  <a class="site-sections__link" href="sitemap.html">Продукты</a>
+                </li>
+                <li class="site-sections__item">
+                  <a class="site-sections__link" href="sitemap.html">Производство печатных плат</a>
+                </li>
+                <li class="site-sections__item">
+                  <a class="site-sections__link" href="sitemap.html">Монтаж печатных плат</a>
+                </li>
+                <li class="site-sections__item">
+                  <a class="site-sections__link" href="sitemap.html">Комплектующие</a>
+                </li>
+                <li class="site-sections__item">
+                  <a class="site-sections__link" href="sitemap.html">Доставка</a>
+                </li>
+                <li class="site-sections__item">
+                  <a class="site-sections__link" href="sitemap.html">Контакты</a>
+                </li>
+              </ul>
           </section>
           <section class="page-footer__contacts page-footer__contacts--nojs contacts">
             <h4 class="contacts__title">Наш офис</h4>
@@ -263,7 +258,7 @@
               <input class="masked" type="tel" name="popup-tel" id="popup-tel" placeholder="Телефон" data-placeholder="+7 (XXX) XXX-XXXX" pattern="\+7 \(\d{3}\) \d{3}-\d{4}" title="+7 (xxx) xxx-xx-xx" required autocomplete="off">
             </label>
             <label data-textarea>
-              <textarea name="popup-question" rows="5">Ваш вопрос</textarea>
+              <textarea name="popup-question" rows="5" placeholder="Ваш вопрос"></textarea>
             </label>
             <button class="button button--dark" type="submit">отправить</button>
             <label for="popup-personal-data-permission" data-checkbox>

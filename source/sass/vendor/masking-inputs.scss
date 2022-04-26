@@ -4,19 +4,21 @@
 
 /* Libary CSS */
 .shell {
-  position: relative;
-  line-height: 1;
+    position: relative;
+    line-height: 1;
   span {
-  position: absolute;
-  left: 3px;
-  top: 1px;
-  color: red;
-  pointer-events: none;
-  z-index: -1;
+    position: absolute;
+    left: 3px;
+    top: 1px;
+    color: red;
+    pointer-events: none;
+    z-index: -1;
+    visibility: hidden;
+
     i { /* any of these 3 will work */
-        color: transparent;
-        opacity: 0;
-        visibility: hidden;
+      color: transparent;
+      opacity: 0;
+      visibility: hidden;
     }
   }
 }

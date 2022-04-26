@@ -34,6 +34,11 @@ form {
     font: 400 16px/134.4% $ff-pt-mono;
     color: $color-default-white;
 
+    &::placeholder {
+      font: 400 16px/134.4% $ff-pt-mono;
+      color: $color-default-white;
+    }
+
     @include vp-1023 {
       padding: 32px 15px 19px;
     }

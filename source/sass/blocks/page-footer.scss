@@ -13,6 +13,10 @@
 
       display: grid;
       grid-template-columns: auto auto;
+      justify-content: flex-start;
+    }
+
+    @include vp-1023 {
       justify-content: space-between;
     }
 
@@ -27,6 +31,10 @@
 }
 
 .page-footer__company-links {
+  flex-shrink: 0;
+
+  margin-right: 10px;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -35,6 +43,7 @@
     grid-column: 1 / -1;
     flex-direction: row;
     margin-bottom: 36px;
+    margin-right: 0;
   }
 
   @include vp-767 {
@@ -48,6 +57,11 @@
   margin-top: -5px;
   margin-bottom: 34px;
 
+  img {
+    width: 215px;
+    height: 55px;
+  }
+
   @include vp-1023 {
     margin-right: auto;
     margin-top: -4px;
@@ -57,29 +71,7 @@
   @include vp-767 {
     margin: 0 auto 20px;
     position: relative;
-    left: -9px;
-  }
-
-  svg {
-    @include vp-767 {
-      width: 55px;
-      height: 55px;
-    }
-  }
-
-  p:first-of-type {
-    margin: 3px 0 0;
-
-    @include vp-767 {
-      display: block;
-      margin-top: 5px;
-    }
-  }
-
-  p:not(:first-of-type) {
-    @include vp-767 {
-      display: block;
-    }
+    left: -3px;
   }
 }
 
@@ -98,16 +90,14 @@
 }
 
 .page-footer__site-sections {
-  position: relative;
-  left: -58px;
+  margin-left: auto;
 
   @include vp-1023 {
-    position: static;
-    left: 0;
+    margin-left: 0;
   }
 
   @include vp-767 {
-    padding: 22px 25px 22px;
+    // padding: 22px 25px 22px;
     border-top: 1px solid transparentize($color-alice-blue, 0.3);
     position: relative;
 
@@ -171,8 +161,9 @@
 }
 
 .page-footer__contacts {
-  position: relative;
-  left: -39px;
+  margin-right: 39px;
+  margin-left: 30px;
+  min-width: 180px;
 
   @include vp-1023 {
     position: static;
@@ -181,8 +172,8 @@
   }
 
   @include vp-767 {
-    padding: 22px 25px 5px;
     margin-right: 0;
+    margin-left: 0;
     position: relative;
 
     border-top: 1px solid transparentize($color-alice-blue, 0.3);
@@ -207,14 +198,6 @@
       height: 1px;
       transform: rotate(90deg);
       background-color: $color-alice-blue;
-    }
-
-    .contacts__title {
-      cursor: pointer;
-    }
-
-    .contacts__list {
-      display: none;
     }
 
     &.is-opened {

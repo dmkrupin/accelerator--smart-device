@@ -67,7 +67,7 @@
     }
   }
 
-  p:first-child {
+  p:first-of-type {
     @include vp-767 {
       br {
         display: none;

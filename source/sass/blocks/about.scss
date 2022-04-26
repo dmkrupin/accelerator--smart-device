@@ -72,6 +72,9 @@
       line-height: 136%;
     }
 
+    &[data-about-text="accordeon-nojs"] {
+      display: block;
+    }
     &[data-about-text="accordeon"] {
       display: none;
     }
@@ -109,5 +112,9 @@
   @include vp-767 {
     margin-left: 0;
     padding: 8px 39px;
+  }
+
+  &--nojs {
+    display: none;
   }
 }

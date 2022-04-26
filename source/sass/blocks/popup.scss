@@ -3,9 +3,10 @@
   min-height: 610px;
   padding: 37px 40px 40px;
 
-  position: relative;
-  top: -181px;
-  left: -8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-51.5%, -93%);
 
   background-color: $color-deep-sky-blue;
   border-radius: 3px;
