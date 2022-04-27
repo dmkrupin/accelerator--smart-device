@@ -36,12 +36,16 @@
     content: "";
     position: absolute;
     top: 19%;
-    left: 2vw;
+    left: 2.5vw;
     z-index: 1;
     width: 510px;
     height: 285px;
     background-image: url("../img/svg/paperplane.svg");
     background-repeat: no-repeat;
+
+    @include vp-1279 {
+      left: 1vw;
+    }
 
     @include vp-1023 {
       display: none;
