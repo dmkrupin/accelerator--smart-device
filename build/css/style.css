@@ -954,6 +954,16 @@ form {
       margin-right: 0;
       margin-left: 40px; } }
 
+.page-header__email,
+.page-header__tel {
+  outline: none; }
+  @media (hover: hover), screen and (min-width: 0\0) {
+    .page-header__email:hover span, .page-header__email:focus span,
+    .page-header__tel:hover span,
+    .page-header__tel:focus span {
+      color: #ffffff;
+      text-decoration: underline; } }
+
 .page-header__callback {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -1813,38 +1823,40 @@ form {
   margin: 0;
   padding: 0;
   list-style: none;
-  max-height: 160px;
+  min-height: 160px;
   width: 470px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
-          column-gap: 30px;
-  row-gap: 5px;
-  overflow-x: scroll; }
+          column-gap: 30px; }
   @media (max-width: 1023px) {
     .site-sections__list {
-      max-height: none;
       width: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
+      min-height: auto;
       -webkit-column-gap: 0;
          -moz-column-gap: 0;
               column-gap: 0;
-      overflow-x: initial; } }
+      -webkit-column-count: auto;
+         -moz-column-count: auto;
+              column-count: auto; } }
   @media (max-width: 767px) {
     .site-sections__list {
       padding: 0 22px 25px; } }
 
 .site-sections__item {
-  width: 220px; }
+  width: 220px;
+  margin-bottom: 5px; }
 
 .site-sections__link {
   font: 400 16px/135% "PT Mono", "Times New Roman", serif;
@@ -1921,11 +1933,11 @@ form {
   min-height: 610px;
   padding: 37px 40px 40px;
   position: absolute;
-  top: 50%;
+  top: 145px;
   left: 50%;
-  -webkit-transform: translate(-51.5%, -93%);
-      -ms-transform: translate(-51.5%, -93%);
-          transform: translate(-51.5%, -93%);
+  -webkit-transform: translateX(-51.5%);
+      -ms-transform: translateX(-51.5%);
+          transform: translateX(-51.5%);
   background-color: #00b2ff;
   border-radius: 3px; }
   .popup p:first-of-type {

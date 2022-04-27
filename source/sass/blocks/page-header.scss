@@ -137,6 +137,20 @@
   }
 }
 
+.page-header__email,
+.page-header__tel {
+  outline: none;
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      span {
+        color: $color-default-white;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 .page-header__callback {
   flex-shrink: 0;
 
