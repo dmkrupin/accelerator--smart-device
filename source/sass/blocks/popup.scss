@@ -17,6 +17,26 @@
     color: $color-default-white;
     font: 400 16px/134.4% $ff-pt-mono;
   }
+
+  button[data-close-modal] {
+    transition: transform $trans-modal;
+    svg {
+      fill: $color-default-white;
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        outline: none;
+        transform: rotate(90deg);
+
+        svg {
+          fill: $color-black-pearl;
+        }
+      }
+    }
+
+  }
 }
 
 .popup__title {
